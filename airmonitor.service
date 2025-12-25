@@ -3,12 +3,12 @@ Description=Air Quality Monitor Light Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/ylee138/air_monitor.py
-WorkingDirectory=/home/ylee138
+ExecStart=/usr/bin/python3 /home/YOUR_USERNAME/air_monitor.py
+WorkingDirectory=/home/YOUR_USERNAME
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
-User=ylee138
+User=YOUR_USERNAME
 
 [Install]
 WantedBy=multi-user.target
